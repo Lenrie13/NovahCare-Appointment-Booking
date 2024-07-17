@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovahCare</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/Logo4.jpeg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="assets/images/Logo4.jpeg" alt="logo-image">
+        <h1>NovahCare Springs Hospital</h1>
+        <h3 class="motto">Your health, our priority!</h3>
+        <h4>
+            3rd Avenue, <br>
+            Parklands, Nairobi-Kenya
+        </h4>
+        <h2 class="mainForm-header">Online Appointment Booking Platform</h2>
+    </header>
+    <main class="container">
+        <div class="form-container">
+            <form id="appointmentBookingForm">
+                <h2 class="form-header">Enter your personal information here; <br>
+                    **All fields are required**
+                </h2>
+                <label for="firstName"> First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+    
+                <label for="lastName"> Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+    
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+    
+                <label for="contact">Contact:</label>
+                <input type="tel" id="contact" name="contact" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="residence">Residence:</label>
+                <input type="text" id="residence" name="residence" required>
+    
+                <label for="reason">Reason for booking:</label>
+                <select id="reasonSelection" name="reason" required>
+                    <!-- <option value="Gynaecology">Gynaecology</option>
+                    <option value="Paediatrics">Paediatrics</option>
+                    <option value="Cardiology">Cardiology</option>
+                    <option value="Radiology">Radiology</option>
+                    <option value="Surgery-General">Surgery-General</option>
+                    <option value="Well Baby Vaccination">Well Baby Vaccination</option>
+                    <option value="Mental Health Clinic">Mental Health Clinic</option>
+                    <option value="General Practitioner">General Practitioner</option>
+                    <option value="Other">Other</option> -->
+                </select>
+    
+                <div id="manualReasonContainer" style="display: none;">
+                    <label for="manualReason">Please specify reason:</label>
+                    <input type="text" id="manualReasonInput" name="manualReason">
+                </div>
+    
+                <label for="branchSelection">Select Branch:</label>
+                <select id="branchSelection" name="branch" required></select>
+    
+                <label for="doctorSelection">Select Doctor:</label>
+                <select id="doctorSelection" name="doctor" required></select>
+    
+                <label for="date">Select Date:</label>
+                <input type="date" id="dateSelection" name="date" required>
+    
+                <label for="time">Select Time:</label>
+                <input type="time" id="timeSelection" name="time" required>
+    
+                <button type="submit">Book Appointment</button>
+            </form>
+        </div>
+        
+        <div class="dashboard-container">
+            <div id="dashboard">
+                <h2 class="dashboard-header">Patient Dashboard</h2>
+                <h3 class="appointments-header">Your Upcoming Appointments</h3>
+                <table class="appointment-details">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Doctor</th>
+                            <th>Branch</th>
+                            <th>Reason</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="appointmentList"></tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

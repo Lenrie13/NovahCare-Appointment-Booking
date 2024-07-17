@@ -1,0 +1,326 @@
+{
+  "doctors": [
+    {
+      "id": "1",
+      "name": "Dr. Alicia Kristen",
+      "specialty": "Gynaecology",
+      "branch": "NovahCare Main-Nairobi"
+    },
+    {
+      "id": "2",
+      "name": "Dr. Ian Wendot",
+      "specialty": "Gynaecology",
+      "branch": "NovahCare Main-Nairobi"
+    },
+    {
+      "id": "3",
+      "name": "Dr. Mark Koech",
+      "specialty": "Gynaecology",
+      "branch": "NovahCare Main-Nairobi"
+    },
+    {
+      "id": "4",
+      "name": "Dr. Susan Wanjiku",
+      "specialty": "Gynaecology",
+      "branch": "NovahCare-Kisumu"
+    },
+    {
+      "id": "5",
+      "name": "Dr. Lucy Waithera",
+      "specialty": "Gynaecology",
+      "branch": "NovahCare-Mombasa"
+    },
+    {
+      "id": "6",
+      "name": "Dr. Cynthia Kirk",
+      "specialty": "Paediatrics",
+      "branch": "NovahCare Main-Nairobi"
+    },
+    {
+      "id": "7",
+      "name": "Dr. Ernest Oluchi",
+      "specialty": "Paediatrics",
+      "branch": "NovahCare Main-Nairobi"
+    },
+    {
+      "id": "8",
+      "name": "Dr. Nadia Bethany",
+      "specialty": "Paediatrics",
+      "branch": "NovahCare-Mombasa"
+    },
+    {
+      "id": "9",
+      "name": "Dr. Lisa Emali",
+      "specialty": "Paediatrics",
+      "branch": "NovahCare-Kisumu"
+    },
+    {
+      "id": "10",
+      "name": "Dr. Mourice Ouma",
+      "specialty": "Cardiology",
+      "branch": "NovahCare Main-Nairobi"
+    },
+    {
+      "id": "11",
+      "name": "Dr. Nannys Waima",
+      "specialty": "Cardiology",
+      "branch": "NovahCare Main-Nairobi"
+    },
+    {
+      "id": "12",
+      "name": "Dr. Vincent Ogachi",
+      "specialty": "Cardiology",
+      "branch": "NovahCare-Mombasa"
+    },
+    {
+      "id": "13",
+      "name": "Dr. James Emerson",
+      "specialty": "Cardiology",
+      "branch": "NovahCare-Kisumu"
+    },
+    {
+      "id": "14",
+      "name": "Dr. Delvine Margaret",
+      "specialty": "Radiology",
+      "branch": "NovahCare Main-Nairobi"
+    },
+    {
+      "id": "15",
+      "name": "Dr. Phillip Otieno",
+      "specialty": "Radiology",
+      "branch": "NovahCare Main-Nairobi"
+    },
+    {
+      "id": "16",
+      "name": "Dr. Erick Weissman",
+      "specialty": "Radiology",
+      "branch": "NovahCare-Kisumu"
+    },
+    {
+      "id": "17",
+      "name": "Dr. Lisa Imogen",
+      "specialty": "Radiology",
+      "branch": "NovahCare-Kisumu"
+    },
+    {
+      "id": "18",
+      "name": "Dr. Juliet Madanga",
+      "specialty": "Radiology",
+      "branch": "NovahCare-Mombasa"
+    },
+    {
+      "id": "19",
+      "name": "Dr. Novah Ogutu",
+      "specialty": "Surgery-General",
+      "branch": "NovahCare Main-Nairobi"
+    },
+    {
+      "id": "20",
+      "name": "Dr. Sharon Egesa",
+      "specialty": "Surgery-General",
+      "branch": "NovahCare Main-Nairobi"
+    },
+    {
+      "id": "21",
+      "name": "Dr. Brian Bruinn",
+      "specialty": "Surgery-General",
+      "branch": "NovahCare-Kisumu"
+    },
+    {
+      "id": "22",
+      "name": "Dr. Cherry Anne",
+      "specialty": "Surgery-General",
+      "branch": "NovahCare-Kisumu"
+    },
+    {
+      "id": "23",
+      "name": "Dr. Fallon Carrington",
+      "specialty": "Surgery-General",
+      "branch": "NovahCare-Mombasa"
+    },
+    {
+      "id": "24",
+      "name": "Dr. Linnet Woodle",
+      "specialty": "Well Baby Vaccination",
+      "branch": "NovahCare Main-Nairobi"
+    },
+    {
+      "id": "25",
+      "name": "Dr. Simon Makaveli",
+      "specialty": "Well Baby Vaccination",
+      "branch": "NovahCare Main-Nairobi"
+    },
+    {
+      "id": "26",
+      "name": "Dr. Zindzi Lucia",
+      "specialty": "Well Baby Vaccination",
+      "branch": "NovahCare-Kisumu"
+    },
+    {
+      "id": "27",
+      "name": "Dr. Zinnia Ericson",
+      "specialty": "Well Baby Vaccination",
+      "branch": "NovahCare-Mombasa"
+    },
+    {
+      "id": "28",
+      "name": "Dr. Lydia Barasa",
+      "specialty": "Mental Health Clinic",
+      "branch": "NovahCare Main-Nairobi"
+    },
+    {
+      "id": "29",
+      "name": "Dr. Wendy Ashley",
+      "specialty": "Mental Health Clinic",
+      "branch": "NovahCare-Mombasa"
+    },
+    {
+      "id": "30",
+      "name": "Dr. Stephen Wendo",
+      "specialty": "Mental Health Clinic",
+      "branch": "NovahCare-Kisumu"
+    },
+    {
+      "id": "31",
+      "name": "Dr. Elizabeth Keen",
+      "specialty": "General Practitioner",
+      "branch": "NovahCare Main-Nairobi"
+    },
+    {
+      "id": "32",
+      "name": "Dr. Daphne Bridge",
+      "specialty": "General Practitioner",
+      "branch": "NovahCare-Kisumu"
+    },
+    {
+      "id": "33",
+      "name": "Dr. Jude Mathioya",
+      "specialty": "General Practitioner",
+      "branch": "NovahCare-Mombasa"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "9df5",
+      "firstName": "Leon",
+      "lastName": "Alex",
+      "age": "15",
+      "contact": "0793456736",
+      "email": "alexleon13@gmail.com",
+      "residence": "Kiambu",
+      "reason": "Radiology",
+      "branch": "NovahCare Main-Nairobi",
+      "doctorId": "14",
+      "date": "2024-07-18",
+      "time": "15:30"
+    },
+    {
+      "id": "f896",
+      "firstName": "Mary",
+      "lastName": "Mbogo",
+      "age": "45",
+      "contact": "0712345699",
+      "email": "mbogomary@gmail.com",
+      "residence": "Kamulu",
+      "reason": "Gynaecology",
+      "branch": "NovahCare-Mombasa",
+      "doctorId": "5",
+      "date": "2024-07-31",
+      "time": "08:30"
+    },
+    {
+      "id": "2482",
+      "firstName": "Lenrie",
+      "lastName": "Ogot",
+      "age": "27",
+      "contact": "0706265906",
+      "email": "josephine.ogot@student.moringaschool.com",
+      "residence": "Ruaka",
+      "reason": "Surgery-General",
+      "branch": "NovahCare Main-Nairobi",
+      "doctorId": "19",
+      "date": "2024-07-25",
+      "time": "16:00"
+    },
+    {
+      "id": "29fc",
+      "firstName": "June",
+      "lastName": "Beryl",
+      "age": "24",
+      "contact": "0793456736",
+      "email": "juneberyl608@gmail.com",
+      "residence": "Juja",
+      "reason": "Well Baby Vaccination",
+      "branch": "NovahCare-Kisumu",
+      "doctorId": "26",
+      "date": "2024-07-29",
+      "time": "10:30"
+    },
+    {
+      "id": "d943",
+      "firstName": "July",
+      "lastName": "Mwavani",
+      "age": "23",
+      "contact": "0791563471",
+      "email": "julymwavani@gmail.com",
+      "residence": "Navakholo",
+      "reason": "Lab tests",
+      "branch": "NovahCare-Mombasa",
+      "doctorId": "33",
+      "date": "2024-08-02",
+      "time": "11:00"
+    }
+  ],
+  "docSpecialties": [
+    {
+      "id": "1",
+      "name": "Gynaecology"
+    },
+    {
+      "id": "2",
+      "name": "Paediatrics"
+    },
+    {
+      "id": "3",
+      "name": "Cardiology"
+    },
+    {
+      "id": "4",
+      "name": "Radiology"
+    },
+    {
+      "id": "5",
+      "name": "Surgery-General"
+    },
+    {
+      "id": "6",
+      "name": "Well Baby Vaccination"
+    },
+    {
+      "id": "7",
+      "name": "Mental Health Clinic"
+    },
+    {
+      "id": "8",
+      "name": "General Practitioner"
+    },
+    {
+      "id": "9",
+      "name": "Other"
+    }
+  ],
+  "branches": [
+    {
+      "id": "1",
+      "name": "NovahCare Main-Nairobi"
+    },
+    {
+      "id": "2",
+      "name": "NovahCare-Kisumu"
+    },
+    {
+      "id": "3",
+      "name": "NovahCare-Mombasa"
+    }
+  ]
+}

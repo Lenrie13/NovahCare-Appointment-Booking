@@ -1,0 +1,183 @@
+body {
+    background-image: url(/assets/images/background9.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    height: 100%;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+h1 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #CC0E74;
+}
+
+.motto {
+    font-family: cursive;
+    text-align: center;
+    margin-top: 0px;
+    color: #45046A;
+    font-size: 20px;
+}
+
+.mainForm-header {
+    text-align: left;
+    margin-left: 140px;
+    margin-bottom: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    color: #571179;
+}
+
+h4 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    font-weight: bolder;
+    color: #AF0171;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.form-container {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-header{
+    margin-left: 0;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: #962071;
+    
+}
+
+.dashboard-container {
+    flex: 1;
+    margin-left: 70px;
+    background-color: #AAC4FF;
+    box-shadow: 10px 10px 5px #B4B4B8;
+    border-radius: 8px;
+    
+}
+
+#dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+.dashboard-header {
+    margin-left: 0;
+    padding-top: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: #CB007B;
+}
+
+.appointments-header {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #401F71;
+    margin-bottom: 30px;
+}
+
+.appointment-details {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: #211951;
+    background-color: #F5F5DC;
+    margin: 8px;
+}
+
+.edit-appointment {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 2px;
+    border: none;
+    background-color: #6F38C5;
+    padding: 3px 12px;
+    color: white;
+    margin-bottom: 5px;
+}
+.cancel-appointment {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 2px;
+    border: none;
+    padding: 3px 12px;
+    background-color: #FB2576;
+    color: white;
+}
+
+tr, th, td {
+    border: 1px solid black;
+    justify-content: space-between;
+    padding: 8px;
+    border-radius: 2px;
+}
+
+th {
+    font-size: 15px;
+}
+
+form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: #DCFFCC;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px #B4B4B8;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input,
+form select,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #BFA2DB;
+    border-radius: 5px;
+    padding-right: 0px;
+}
+
+form button {
+    background-color: #9951FF;
+    box-shadow: 6px 6px 3px #B4B4B8;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #F38EFF;
+}
