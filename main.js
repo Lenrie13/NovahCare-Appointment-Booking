@@ -152,6 +152,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.log('Existing appointments:', existingAppointments); // Logging existing appointments
 
                 // Checking if the time slot is already booked
+                // Users cannot book same doctor, same specialty, same branch, same date and same time slot.
                 const isDoctorAlreadyBooked = (appointments, doctorId, date, time) => {
                     const existingAppointment = appointments.find(appointment => appointment.doctorId === doctorId && appointment.date === date && appointment.time === time);
                     return !!existingAppointment;
