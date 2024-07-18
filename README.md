@@ -10,6 +10,7 @@ They can also edit and cancel existing appointments.
 # Features
 
 - **Branch and Doctor Selection:** Users can choose a branch and a doctor based on the doctors' specialty.
+- **Date Selection:** Users cannot book appointments on dates that have already passed as these are disabled and unavailable.
 - **Time Slot Booking:** Users can book appointments during office hours (8 AM to 5 PM, excluding OOF (Out of Office) hours like between 1 PM to 2 PM (lunch hour)).
 - **Edit and Cancel Appointments:** Users can edit their appointment details like selecting a different branch, doctor, specialty (reason for booking), date and time and they can also cancel their appointments altogether.
 - **Validation:** Ensures every booking details are complete for it to be successful and that no double bookings occur for the same doctor, branch, date, and time.

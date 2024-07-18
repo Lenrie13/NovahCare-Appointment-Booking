@@ -201,20 +201,6 @@
   ],
   "appointments": [
     {
-      "id": "9df5",
-      "firstName": "Leon",
-      "lastName": "Alex",
-      "age": "15",
-      "contact": "0793456736",
-      "email": "alexleon13@gmail.com",
-      "residence": "Kiambu",
-      "reason": "Radiology",
-      "branch": "NovahCare Main-Nairobi",
-      "doctorId": "14",
-      "date": "2024-07-18",
-      "time": "15:30"
-    },
-    {
       "id": "f896",
       "firstName": "Mary",
       "lastName": "Mbogo",
@@ -243,32 +229,60 @@
       "time": "16:00"
     },
     {
-      "id": "29fc",
       "firstName": "June",
       "lastName": "Beryl",
       "age": "24",
       "contact": "0793456736",
       "email": "juneberyl608@gmail.com",
-      "residence": "Juja",
-      "reason": "Well Baby Vaccination",
-      "branch": "NovahCare-Kisumu",
-      "doctorId": "26",
-      "date": "2024-07-29",
-      "time": "10:30"
-    },
-    {
-      "id": "d943",
-      "firstName": "July",
-      "lastName": "Mwavani",
-      "age": "23",
-      "contact": "0791563471",
-      "email": "julymwavani@gmail.com",
-      "residence": "Navakholo",
+      "residence": "Kiambu",
       "reason": "Lab tests",
       "branch": "NovahCare-Mombasa",
       "doctorId": "33",
-      "date": "2024-08-02",
-      "time": "11:00"
+      "date": "2024-07-26",
+      "time": "10:30",
+      "id": "29fc"
+    },
+    {
+      "id": "a8e4",
+      "firstName": "Andrew",
+      "lastName": "John",
+      "age": "30",
+      "contact": "0793456736",
+      "email": "andyjohn@gmail.com",
+      "residence": "Ruaka",
+      "reason": "General Practitioner",
+      "branch": "NovahCare-Kisumu",
+      "doctorId": "32",
+      "date": "2024-07-25",
+      "time": "11:10"
+    },
+    {
+      "id": "cd04",
+      "firstName": "Sylvia",
+      "lastName": "Apondi",
+      "age": "23",
+      "contact": "0712345699",
+      "email": "silvaps@gmail.com",
+      "residence": "Mamlaka",
+      "reason": "Well Baby Vaccination",
+      "branch": "NovahCare Main-Nairobi",
+      "doctorId": "24",
+      "date": "2024-08-07",
+      "time": "14:00"
+    },
+    {
+      "id": "1438",
+      "firstName": "Mary",
+      "lastName": "Mbogo",
+      "age": "45",
+      "contact": "0712345699",
+      "email": "mbogomary@gmail.com",
+      "residence": "Kamulu",
+      "reason": "Gynaecology",
+      "branch": "NovahCare-Kisumu",
+      "doctorId": "4",
+      "date": "2024-07-25",
+      "time": "15:00"
     }
   ],
   "docSpecialties": [

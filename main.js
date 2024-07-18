@@ -6,12 +6,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const manualReasonContainer = document.getElementById('manualReasonContainer');
     const timeSelect = document.getElementById('timeSelection');
     const appointmentList = document.getElementById('appointmentList');
+    const dateInput = document.getElementById('dateSelection');
     const baseURL = 'http://localhost:3000';
     let editingAppointmentId = null; // Tracking if editing an existing appointment
 
     let doctorsMap = {}; // To store doctor details
 
-    // Fetching branches and populate branch select
+    // Fetching branches and populating branch selection
     fetch(`${baseURL}/branches`)
         .then(response => response.json())
         .then(branches => {
@@ -24,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => console.error('Error fetching branches:', error));
 
-    //Fetching reasons and populate reason select
+    // Fetching reasons and populating reason selection
     fetch(`${baseURL}/docSpecialties`)
         .then(response => response.json())
         .then(reasons => {
@@ -37,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => console.error('Error fetching specialties:', error));
 
-    // Showing input field for 'Other' reason
+    // Showing input field for 'Other' reasons
     reasonSelect.addEventListener('change', () => {
         if (reasonSelect.value === 'Other') {
             manualReasonContainer.style.display = 'block';
@@ -47,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
         updateDoctorOptions(); // Updating doctor options when reason changes
     });
 
-    // Fetching all doctors once and populate the doctorsMap
+    // Fetching all doctors once and populating the doctorsMap
     const fetchDoctors = () => {
         return fetch(`${baseURL}/doctors`)
             .then(response => response.json())
@@ -150,19 +151,13 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(existingAppointments => {
                 console.log('Existing appointments:', existingAppointments); // Logging existing appointments
 
-                // Cheking if the time slot is already booked
-                // Patients cannot book the same doctor, same branch, same day and time as an already existing booking
+                // Checking if the time slot is already booked
                 const isDoctorAlreadyBooked = (appointments, doctorId, date, time) => {
-                    const existingAppointment = appointments.find((appointment) => appointment.doctorId === doctorId && appointment.date === date && appointment.time === time);
-                
-                    if (existingAppointment) {
-                        return true;
-                    }
-                
-                    return false;
-                }
-                
-                if (isDoctorAlreadyBooked(existingAppointments, formData.doctorId, formData.date, formData.time) > 0 && !editingAppointmentId) {
+                    const existingAppointment = appointments.find(appointment => appointment.doctorId === doctorId && appointment.date === date && appointment.time === time);
+                    return !!existingAppointment;
+                };
+
+                if (isDoctorAlreadyBooked(existingAppointments, formData.doctorId, formData.date, formData.time) && !editingAppointmentId) {
                     alert('This time slot is already booked. Please select a different time.');
                 } else {
                     const url = editingAppointmentId ? `${baseURL}/appointments/${editingAppointmentId}` : `${baseURL}/appointments`;
@@ -243,37 +238,49 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('contact').value = appointment.contact;
                 document.getElementById('email').value = appointment.email;
                 document.getElementById('residence').value = appointment.residence;
-                reasonSelect.value = appointment.reason;
                 branchSelect.value = appointment.branch;
-                updateDoctorOptions(); // Updating doctor options based on the selected branch and reason
-                doctorSelect.value = appointment.doctorId;
+                reasonSelect.value = appointment.reason;
+                updateDoctorOptions().then(() => {
+                    doctorSelect.value = appointment.doctorId;
+                });
                 document.getElementById('dateSelection').value = appointment.date;
                 document.getElementById('timeSelection').value = appointment.time;
-
                 editingAppointmentId = appointmentId; // Setting the editing flag
             })
-            .catch(error => console.error('Error fetching appointment details:', error));
+            .catch(error => console.error('Error fetching appointment:', error));
     }
 
-    // Cancelling appointment prompt
-    // Confirms if patient intends to cancel an upcoming appointment
+    // Canceling already existing appointments
     const cancelAppointment = (appointmentId) => {
         if (confirm('Are you sure you want to cancel this appointment?')) {
             fetch(`${baseURL}/appointments/${appointmentId}`, {
                 method: 'DELETE'
             })
-            .then(() => {
-                alert('Appointment cancelled successfully.');
-                fetchAppointments(); // Refreshing the list after successful cancellation
+            .then(response => {
+                if (response.ok) {
+                    alert('Appointment canceled successfully!');
+                    fetchAppointments(); // Refreshing the list after cancelation
+                } else {
+                    alert('Failed to cancel appointment.');
+                }
             })
-            .catch(error => {
-                console.error('Error cancelling appointment:', error);
-                alert('Failed to cancel appointment.');
-            });
+            .catch(error => console.error('Error canceling appointment:', error));
         }
     }
 
+    // Setting min date to today with the correct format for the min attribute
+    const setMinDate = () => {
+        const today = new Date();
+        const year = today.getFullYear();
+        const month = String(today.getMonth() + 1).padStart(2, '0'); // Months are zero-based (January would be 0, Feb 1 etc so we add 1 to get the correct one for Dec)
+        const day = String(today.getDate()).padStart(2, '0');
+        const formattedDate = `${year}-${month}-${day}`; // Format for the min attribute- my dates show as dd/mm/yyyy
+        dateInput.setAttribute('min', formattedDate);
+    }
+
     // Initial fetching of doctors and corresponding appointments
-    fetchDoctors()
-    .then(fetchAppointments);
+    fetchDoctors().then(fetchAppointments);
+
+    // Setting the minimum date on page load
+    setMinDate();
 });
