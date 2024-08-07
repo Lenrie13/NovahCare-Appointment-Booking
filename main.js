@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const onClickMeHandler=()=>{
+        window.alert("Clicked random button");
+    }
+    
     const branchSelect = document.getElementById('branchSelection');
     const doctorSelect = document.getElementById('doctorSelection');
     const reasonSelect = document.getElementById('reasonSelection');
